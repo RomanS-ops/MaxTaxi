@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxTaxi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-logo">
+        <img src="/img/logo.png" alt="logo">
+    </div>
+    
+    <nav class="header-nav">
+        <ul>
+            <li><a href="/index.html">Наші авто</a></li>
+            <li><a href="/send.html">Додавання авто до бази</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="all-cars">
+  <div class="update">
+    <div class="update-header">
+      <p>Редагування данних таксі</p>
+    </div>
+    <div class="update-content">
+    <div id="parent" class="cars__info cars__update">
+       
+    </div>
+    <form id="updateForm" class="update-form">
+        <div class="form-row update-inputs">
+            <!-- <label for="number">Nomber: *</label><br /> -->
+            <input type="text" name="number" id="number" class="form-input-field" placeholder="Номерний знак" required>
+          </div>
+        <div class="form-row update-inputs">
+            <!-- <label for="brand">brand: *</label><br /> -->
+            <input type="text" name="brand" id="brand" class="form-input-field" placeholder="Марка" required>
+          </div>
+        <div class="form-row update-inputs">
+            <!-- <label for="model">model: *</label><br /> -->
+            <input type="text" name="model" id="model" class="form-input-field" placeholder="Модель" required>
+          </div>
+        <div class="form-row update-inputs">
+          <!-- <label for="color">color: *</label><br /> -->
+          <input type="text" name="color" id="color" class="form-input-field" placeholder="Колір" required>
+        </div>
+        <div class="form-row update-inputs">
+          <!-- <label for="rate">rate: *</label><br /> -->
+          <input type="number" name="rate" id="rate" class="form-input-field" placeholder="Ціна" required>
+        </div>
+        <div class="">
+          <input type="submit" onclick="loadWeather();" name="submit" value="Змінити" class="btn update-btn ">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+  
+    
+    <script src="js/update.js"></script>
+</body>
+</html>
